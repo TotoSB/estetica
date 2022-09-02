@@ -1,0 +1,233 @@
+body {
+    overflow-x: hidden;
+}
+
+#whatsapp {
+    position: fixed;
+    width: 80px;
+    padding: 10px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 10;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero {
+    display: flex;
+    height: calc(100vh - 56px);
+    width: 99vw;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7),rgba(0,0,0,0.6)) ,url(imgs/heroimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 250px;
+    text-align: center;
+    align-items: center;
+}
+
+#hero_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#hero_h1 {
+    color: #fff;
+    margin-left: 50px;
+    font-size: 5rem;
+    animation-name: entryh1;
+    animation-duration: 2s;
+    display: inline;
+    font-family: 'Dancing Script', cursive;
+}
+
+@keyframes entryh1 {
+    0%   {
+        transform: scale(0);
+        filter: opacity(0);
+    }
+    100% {
+        transform: scale(1);
+        filter: opacity(1);
+    }
+}
+
+#hero_h2 {
+    color: rgb(219, 219, 219);
+    animation-name: entryh2;
+    animation-duration: 2s;
+    font-size: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+@keyframes entryh2 {
+    0%   {
+        transform: scale(0);
+        filter: opacity(0);
+    }
+    100% {
+        transform: scale(1);
+        filter: opacity(1);
+    }
+}
+
+#about {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#about h2 {
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+iframe {
+    width: 75%;
+}
+
+#carouselSlides {
+    margin-bottom: 10px;
+    width: 75%;
+    height: 25%;
+}
+
+#container_servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container_servicios h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+.card-group {
+    width: 30%;
+}
+
+hr {
+    width: 300px;
+}
+
+.contactenos_redes {
+    width: 69vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+.fa-brands {
+    color:#404040;
+    font-size: 60px;
+}
+
+.contactenos_redes h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+.wsp_1 {
+    padding: 30px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid rgba(0, 0, 0, 0);
+    border-left: 2px solid rgba(0, 0, 0, 0);
+    margin: 20px;
+    transition: all 0.3s;
+}
+
+.ig_1 {
+    padding: 30px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid rgba(0, 0, 0, 0);
+    border-left: 2px solid rgba(0, 0, 0, 0);
+    margin: 20px;
+    transition: all 0.3s;
+}
+
+.wsp_1:hover {
+    transform: scale(1.2);
+    color: #128C7E;
+    border-top: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    border-right: 2px solid #128C7E;
+    border-left: 2px solid #128C7E;
+}
+
+.ig_1:hover {
+    transform: scale(1.2);
+    border-top: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    border-right: 2px solid #c32aa3;
+    border-left: 2px solid #c32aa3;
+    color: #c32aa3;
+}
+
+footer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #ebc0c0;
+}
+
+.footericon {
+    font-size: 45px;
+    transition: all 0.3s;
+}
+
+span {
+    color: #000;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+
+    #hero_h1 {
+        margin-left: 0px;
+    }
+
+    iframe {
+        height: 200px;
+    }
+
+    #hero_div {
+        justify-content: center;
+    }
+
+    #hero {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 470px) {
+    #hero_h1 {
+        font-size: 3rem;
+    }
+    #hero_h2 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .container_icons {
+        display: flex;
+        flex-direction: column;
+    }
+}
